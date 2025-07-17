@@ -1,0 +1,18 @@
+body {
+  font-family: sans-serif;
+}
+
+.btn-primary {
+    background-color: #004085;
+    border-color: #00376c;
+}
+
+.btn-primary:hover {
+    background-color: #00376c;
+    border-color: #00274a;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #004085;
+    background-color: #e7f1ff;
+}
