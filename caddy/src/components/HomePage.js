@@ -12,7 +12,7 @@ const HomePage = () => {
       <div className="d-grid gap-3 col-md-6 mx-auto mt-4">
         <Link to="/holes" className="btn btn-primary btn-lg">The Holes</Link>
         <Link to="/info" className="btn btn-primary btn-lg">Course Info</Link>
-        <a href="https://www.your-golf-course-booking-url.com" target="_blank" rel="noopener noreferrer" className="btn btn-success btn-lg">Book a Tee Time</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer" className="btn btn-success btn-lg">Book a Tee Time</a>
       </div>
     </div>
   );
