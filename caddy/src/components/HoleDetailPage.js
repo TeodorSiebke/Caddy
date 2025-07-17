@@ -43,6 +43,9 @@ const HoleDetailPage = () => {
           </div>
           <div className="text-center mt-4">
             <Link to="/holes" className="btn btn-secondary">Back to Holes</Link>
+            {parseInt(holeNumber) < 9 && (
+              <Link to={`/hole/${parseInt(holeNumber) + 1}`} className="btn btn-primary ms-2">Next Hole</Link>
+            )}
           </div>
         </div>
       </div>
