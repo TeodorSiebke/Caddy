@@ -1,4 +1,4 @@
-import React, { createContext, useState, useEffect, useContext } from 'react';
+import React, { createContext, useState, useContext } from 'react';
 
 const ScoreContext = createContext();
 
@@ -15,17 +15,9 @@ const initialHolesData = [
 ];
 
 export const ScoreProvider = ({ children }) => {
-  const [holeScores, setHoleScores] = useState(() => {
-    const savedScores = localStorage.getItem('golf_hole_scores');
-    if (savedScores) {
-      return JSON.parse(savedScores);
-    }
-    return initialHolesData.map(hole => ({ ...hole, strokes: '' }));
-  });
-
-  useEffect(() => {
-    localStorage.setItem('golf_hole_scores', JSON.stringify(holeScores));
-  }, [holeScores]);
+  const [holeScores, setHoleScores] = useState(
+    initialHolesData.map(hole => ({ ...hole, strokes: '' }))
+  );
 
   const handleStrokesChange = (holeNumber, value) => {
     setHoleScores(prevScores =>
@@ -50,7 +42,6 @@ export const ScoreProvider = ({ children }) => {
   };
 
   const resetScores = () => {
-    localStorage.removeItem('golf_hole_scores');
     setHoleScores(initialHolesData.map(hole => ({ ...hole, strokes: '' })));
   };
 
