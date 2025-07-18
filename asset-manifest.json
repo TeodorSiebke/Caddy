@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Caddy/static/css/main.7bd425e2.css",
-    "main.js": "/Caddy/static/js/main.af6b8a6d.js",
+    "main.js": "/Caddy/static/js/main.4d45a30b.js",
     "static/js/453.c4f86bab.chunk.js": "/Caddy/static/js/453.c4f86bab.chunk.js",
     "index.html": "/Caddy/index.html",
     "main.7bd425e2.css.map": "/Caddy/static/css/main.7bd425e2.css.map",
-    "main.af6b8a6d.js.map": "/Caddy/static/js/main.af6b8a6d.js.map",
+    "main.4d45a30b.js.map": "/Caddy/static/js/main.4d45a30b.js.map",
     "453.c4f86bab.chunk.js.map": "/Caddy/static/js/453.c4f86bab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7bd425e2.css",
-    "static/js/main.af6b8a6d.js"
+    "static/js/main.4d45a30b.js"
   ]
 }
