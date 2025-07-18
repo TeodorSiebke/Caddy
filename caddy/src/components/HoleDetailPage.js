@@ -45,18 +45,23 @@ const HoleDetailPage = () => {
             </div>
           </div>
           <div className="text-center mt-4">
-            <div className="d-flex justify-content-center align-items-center mb-3">
-              <label htmlFor="strokesInput" className="form-label me-2 mb-0">Strokes:</label>
-              <input
-                type="number"
-                id="strokesInput"
-                className="form-control w-auto"
-                placeholder="Enter strokes"
-                value={currentHoleScore ? currentHoleScore.strokes : ''}
-                onChange={(e) => handleStrokesChange(parseInt(holeNumber), e.target.value)}
-                min="1"
-              />
-              <span className="ms-2">Score: {calculateScoreRelative(currentHoleData.par, currentHoleScore ? currentHoleScore.strokes : '')}</span>
+            <div className="row justify-content-center">
+              <div className="col-12 col-md-6">
+                <div className="d-flex justify-content-center align-items-center mb-3">
+                  <label htmlFor="strokesInput" className="form-label me-2 mb-0">Strokes:</label>
+                  <input
+                    type="number"
+                    id="strokesInput"
+                    className="form-control"
+                    style={{ width: '80px' }}
+                    placeholder="Enter strokes"
+                    value={currentHoleScore ? currentHoleScore.strokes : ''}
+                    onChange={(e) => handleStrokesChange(parseInt(holeNumber), e.target.value)}
+                    min="1"
+                  />
+                  <span className="ms-2">Score: {calculateScoreRelative(currentHoleData.par, currentHoleScore ? currentHoleScore.strokes : '')}</span>
+                </div>
+              </div>
             </div>
             <Link to="/holes" className="btn btn-secondary">Back to Holes</Link>
             {parseInt(holeNumber) < 9 && (
